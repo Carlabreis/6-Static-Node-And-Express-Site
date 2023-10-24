@@ -1,5 +1,5 @@
 {
-    "projects": {
+    "projects": [{
         "id": 1,
         "project_name": "Random Quote Generator",
         "description": "An app that displays random quotes from the book 'The Little Prince', by Antoine de Saint-Exupér, and change the background color each time a button is clicked.",
@@ -28,20 +28,20 @@
     },
     {
         "id": 4,
-        "project_name": ,
-        "description": ,
-        "technologies": ,
-        "live_link": ,
-        "github_link": ,
+        "project_name": "OOP Game",
+        "description": "Phrase hunter game, let players use their physical computer and onscreen keyboard to enter guesses.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "live_link": "https://carlabreis.github.io/oop_game-v2/",
+        "github_link": "https://github.com/Carlabreis/oop_game-v2",
         "image_urls": ["./images/proj-4-main.png", "./images/proj-4-add.png", "./images/proj-4-add1.png"]
     },
     {
         "id": 5,
-        "project_name": ,
-        "description": ,
-        "technologies": ,
-        "live_link": ,
-        "github_link": ,
+        "project_name": "Public API Requests",
+        "description": "An app for a fictional company called Awesome Startup, a distributed company with remote employees working all over the world. The page displays the employees and their contact information. Clicking the employee`s 'card' will open a modal window with more detailed information, such as the employee’s birthday and address.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "live_link": "https://carlabreis.github.io/5-Public-API-Requests/",
+        "github_link": "https://github.com/Carlabreis/5-Public-API-Requests",
         "image_urls": ["./images/proj-5-main.png", "./images/proj-5-add.png", "./images/proj-5-add1.png"]
-    }
+    }]
 }
