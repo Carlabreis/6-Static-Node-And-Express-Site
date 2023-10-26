@@ -1,47 +1,67 @@
 {
-    "projects": [{
-        "id": 1,
-        "project_name": "Random Quote Generator",
-        "description": "An app that displays random quotes from the book 'The Little Prince', by Antoine de Saint-Exupér, and change the background color each time a button is clicked.",
-        "technologies": ["HTML", "CSS", "JavaScript"],
-        "live_link": "https://carlabreis.github.io/a_random_quote_generator-v1/",
-        "github_link": "https://github.com/Carlabreis/a_random_quote_generator-v1",
-        "image_urls": ["./images/proj-1-main.png", "./images/proj-1-add.png", "./images/proj-1-add1.png"]
+  "projects": [
+    {
+      "id": 0,
+      "project_name": "Random Quote Generator",
+      "description": "An app that displays random quotes from the book 'The Little Prince', by Antoine de Saint-Exupér, and change the background color each time a button is clicked.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "live_link": "https://carlabreis.github.io/a_random_quote_generator-v1/",
+      "github_link": "https://github.com/Carlabreis/a_random_quote_generator-v1",
+      "image_urls": [
+        "/static/images/1/proj-1-main.png",
+        "/static/images/1/proj-1-add.png",
+        "/static/images/1/proj-1-add1.png"
+      ]
     },
     {
-        "id": 2,
-        "project_name": "Data Pagination and Filtering",
-        "description": "An app that displays a list of students from a local data file, and uses pagination and filtering to navigate thru the list.",
-        "technologies": ["HTML", "CSS", "JavaScript"],
-        "live_link": "https://carlabreis.github.io/data-pagination-and-filtering-v1/",
-        "github_link": "https://github.com/Carlabreis/data-pagination-and-filtering-v1",
-        "image_urls": ["./images/proj-2-main.png", "./images/proj-2-add.png", "./images/proj-2-add1.png"]
+      "id": 1,
+      "project_name": "Data Pagination and Filtering",
+      "description": "An app that displays a list of students from a local data file, and uses pagination and filtering to navigate thru the list.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "live_link": "https://carlabreis.github.io/data-pagination-and-filtering-v1/",
+      "github_link": "https://github.com/Carlabreis/data-pagination-and-filtering-v1",
+      "image_urls": [
+        "/static/images/2/proj-2-main.png",
+        "/static/images/2/proj-2-add.png",
+        "/static/images/2/proj-2-add1.png"
+      ]
     },
     {
-        "id": 3,
-        "project_name": "Interactive Form",
-        "description": "A fictional Full-Stack Conference interactive registration form page.",
-        "technologies": ["HTML", "CSS", "JavaScript"],
-        "live_link": "https://carlabreis.github.io/interactive-form-v3/",
-        "github_link": "https://github.com/Carlabreis/interactive-form-v3",
-        "image_urls": ["./images/proj-3-main.png", "./images/proj-3-add.png", "./images/proj-3-add1.png"]
+      "id": 2,
+      "project_name": "Interactive Form",
+      "description": "A fictional Full-Stack Conference interactive registration form page.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "live_link": "https://carlabreis.github.io/interactive-form-v3/",
+      "github_link": "https://github.com/Carlabreis/interactive-form-v3",
+      "image_urls": [
+        "/static/images/3/proj-3-main.png",
+        "/static/images/3/proj-3-add.png",
+        "/static/images/3/proj-3-add1.png"
+      ]
     },
     {
-        "id": 4,
-        "project_name": "OOP Game",
-        "description": "Phrase hunter game, let players use their physical computer and onscreen keyboard to enter guesses.",
-        "technologies": ["HTML", "CSS", "JavaScript"],
-        "live_link": "https://carlabreis.github.io/oop_game-v2/",
-        "github_link": "https://github.com/Carlabreis/oop_game-v2",
-        "image_urls": ["./images/proj-4-main.png", "./images/proj-4-add.png", "./images/proj-4-add1.png"]
+      "id": 3,
+      "project_name": "OOP Game",
+      "description": "Phrase hunter game, let players use their physical computer and onscreen keyboard to enter guesses.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "live_link": "https://carlabreis.github.io/oop_game-v2/",
+      "github_link": "https://github.com/Carlabreis/oop_game-v2",
+      "image_urls": [
+        "/static/images/4/proj-4-main.png",
+        "/static/images/4/proj-4-add.png"
+      ]
     },
     {
-        "id": 5,
-        "project_name": "Public API Requests",
-        "description": "An app for a fictional company called Awesome Startup, a distributed company with remote employees working all over the world. The page displays the employees and their contact information. Clicking the employee`s 'card' will open a modal window with more detailed information, such as the employee’s birthday and address.",
-        "technologies": ["HTML", "CSS", "JavaScript"],
-        "live_link": "https://carlabreis.github.io/5-Public-API-Requests/",
-        "github_link": "https://github.com/Carlabreis/5-Public-API-Requests",
-        "image_urls": ["./images/proj-5-main.png", "./images/proj-5-add.png", "./images/proj-5-add1.png"]
-    }]
+      "id": 4,
+      "project_name": "Public API Requests",
+      "description": "An app for a fictional company called Awesome Startup, a distributed company with remote employees working all over the world. The page displays the employees and their contact information. Clicking the employee`s 'card' will open a modal window with more detailed information, such as the employee’s birthday and address.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "live_link": "https://carlabreis.github.io/5-Public-API-Requests/",
+      "github_link": "https://github.com/Carlabreis/5-Public-API-Requests",
+      "image_urls": [
+        "/static/images/5/proj-5-main.png",
+        "/static/images/5/proj-5-add.png"
+      ]
+    }
+  ]
 }
