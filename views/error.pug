@@ -2,5 +2,13 @@ extends layout.pug
 
 block content
 
-    h2= err.status
-    p= err.message
+    div.error-message 
+        h1 #{err.status}
+        h2= `${err.message}`
+        pre= `${err.stack}`
+
+    div 
+        nav.nav
+            a(href='/')
+              span &larr;
+              |  Back
