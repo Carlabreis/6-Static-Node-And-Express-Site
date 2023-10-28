@@ -17,22 +17,16 @@ body {
 
 body {
   position: relative;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
   background: #fefefe;
-  background: #000;
   transform: translateX(0px);
   transition: all 0.4s ease-out;
 }
 
 article {
   background: #fefefe;
-}
-
-h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
 }
 
 h5{
@@ -137,7 +131,6 @@ nav a span {
   height: 100%;
   min-height: 100%;
   padding: 20px;
-  background: #000;
 }
 
 .sidebar-info-box {
@@ -167,7 +160,6 @@ nav a span {
   text-rendering: optimizeLegibility;
   line-height: 1.6;
   font-size: 14px;
-  color: #999
 }
 
 .sidebar a {
@@ -184,7 +176,6 @@ nav a span {
   color: #fefefe;
   height: 40px;
   padding: 0.5rem;
-  background: #0a0a0a;
   border-left: 1px solid #0a0a0a;
 }
 
@@ -201,7 +192,6 @@ nav a span {
   width: 20px;
   height: 16px;
   border: none;
-  background: #0a0a0a;
   margin-top: 3px;
   margin-right: 10px;
   border-top: 2px solid #fefefe;
@@ -296,7 +286,6 @@ nav a span {
   max-width: 255px;
   margin: auto 0 5px 0;
   padding: 0.85em 1em;
-  background-color: #333;
   border: 1px solid transparent;
 }
 
@@ -361,4 +350,40 @@ nav a span {
   .inner-wrapper {
     max-width: 1200px;
   }
+}
+
+/*
+  My style changes
+*/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,p{
+  font-family: 'Inconsolata', monospace;
+}
+
+.header {
+  background: #97C4B8;
+}
+
+.header button {
+  background: #97C4B8;
+}
+
+.sidebar {
+  background: #97C4B8;
+}
+
+.sidebar p {
+  color: #555;
+}
+
+.btn-link {
+  background-color: #97C4B8;
+}
+
+.btn-link:hover {
+  background-color: #555;
+  transition: 0.7s;
 }
