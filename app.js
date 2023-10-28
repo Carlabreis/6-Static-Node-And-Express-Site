@@ -8,8 +8,8 @@ app.set("view engine", "pug");
 
 app.use('/static', express.static('public'));
 
+/* PATHS */
 app.get("/", (req, res) => {
-    // res.locals.projects = projects;
     res.render("index", { projects });
 });
 
@@ -46,6 +46,7 @@ app.use((err, req, res, next) => {
     }
 })
 
+/* RUN APP ON LOCALHOST */
 app.listen(3000, () => {
     console.log("The application is running on localhost:3000!")
 });
