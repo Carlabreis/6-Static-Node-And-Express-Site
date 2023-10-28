@@ -41,7 +41,8 @@ app.use((err, req, res, next) => {
         res.render("not-found", { err });
     } else {
         const err = new Error();
-        err.message = err.message || `Oops! Something went wrong on the server!`
+        err.message = err.message || `Oops! Something went wrong on the server!`;
+        console.log(err.message);
         res.status(err.status || 500).render('error', { err });
     }
 })
