@@ -42,7 +42,7 @@ app.get("*", (req, res, next) => {
     // just for testing the global error handler
     err.status = 500;
     err.message = `Something went wrong on the server!`;
-    // err.status = 500;
+    // err.status = 404;
     // err.message = `It looks like the page requested doesn't exist.`;
     next(err);
 })
