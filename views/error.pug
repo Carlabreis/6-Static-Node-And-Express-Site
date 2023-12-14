@@ -3,7 +3,7 @@ extends layout.pug
 block content
 
     div.error-message 
-        h1 #{err.status}
+        h1= `${err.status}`
         h2= `${err.message}`
         pre= `${err.stack}`
 

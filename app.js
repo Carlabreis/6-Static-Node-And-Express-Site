@@ -2,13 +2,21 @@ const express = require("express");
 const { projects } = require("./data.json");
 const path = require("path");
 
+// set up an Express application
 const app = express();
 
+/**
+ * MIDDLEWARE
+ */
+// set the Pug template engine as the default view engine
 app.set("view engine", "pug");
 
-app.use('/static', express.static('public'));
+// static files are served from the 'public' directory
+app.use('/static', express.static(path.join(__dirname, 'public')));
 
-/* PATHS */
+/**
+ * ROUTES
+ */
 app.get("/", (req, res) => {
     res.render("index", { projects });
 });
@@ -29,13 +37,15 @@ app.get("/projects/:id", (req, res, next) => {
     }
 });
 
-/* ERROR HANDLERS */
-/* 404 to catch undefined or non-existent route requests */
+/**
+ * ERROR HANDLERS
+ */
+// 404 to catch undefined or non-existent route requests
 app.use((req, res, next) => {
     res.status(404).render("not-found");
 });
 
-/* Global error handler */
+// Global error handler
 app.use((err, req, res, next) => {
     if (err.status === 404) {
         res.render("not-found", { err });
@@ -47,7 +57,9 @@ app.use((err, req, res, next) => {
     }
 })
 
-/* RUN APP ON LOCALHOST */
+/**
+ * RUN APP ON LOCALHOST
+ */
 app.listen(3000, () => {
     console.log("The application is running on localhost:3000!")
 });
