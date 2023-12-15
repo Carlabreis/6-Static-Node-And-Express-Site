@@ -37,22 +37,15 @@ app.get("/projects/:id", (req, res, next) => {
     }
 });
 
-app.get("*", (req, res, next) => {
-    const err = new Error();
-    // just for testing the global error handler
-    err.status = 500;
-    err.message = `Something went wrong on the server!`;
-    // err.status = 404;
-    // err.message = `It looks like the page requested doesn't exist.`;
-    next(err);
-})
-
 /**
  * ERROR HANDLERS
  */
 // 404 to catch undefined or non-existent route requests
-app.use((err, req, res) => {
-    res.render("not-found", { err });
+app.use((req, res, next) => {
+    const err = new Error();
+    err.status = 404;
+    err.message = `It looks like the page requested doesn't exist.`;
+    next(err);
 });
 
 // Global error handler
@@ -60,7 +53,6 @@ app.use((err, req, res, next) => {
     if (err.status === 404) {
         res.render("not-found", { err });
     } else {
-        const err = new Error();
         err.message = err.message || `Oops! Something went wrong on the server!`;
         console.log(err.message);
         res.status(err.status || 500).render('error', { err });
