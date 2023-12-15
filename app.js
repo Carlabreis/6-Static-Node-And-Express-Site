@@ -1,6 +1,5 @@
 const express = require("express");
 const { projects } = require("./data.json");
-const path = require("path");
 
 // set up an Express application
 const app = express();
@@ -11,8 +10,8 @@ const app = express();
 // set the Pug template engine as the default view engine
 app.set("view engine", "pug");
 
-// static files are served from the 'public' directory
-app.use('/static', express.static(path.join(__dirname, 'public')));
+// serve static files from the 'public' directory
+app.use('/static', express.static('public'));
 
 /**
  * ROUTES
